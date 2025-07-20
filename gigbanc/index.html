@@ -19,7 +19,7 @@
         "imports": {
           "react/": "https://esm.sh/react@^19.1.0/",
           "react": "https://esm.sh/react@^19.1.0",
-          "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+          "react-dom/": "https://esm.sh/react-dom@^19.1.0",
           "react-router-dom": "https://esm.sh/react-router-dom@^7.7.0"
         }
       }
@@ -35,32 +35,13 @@
         font-family: 'Poppins', sans-serif;
       }
 
-      /* Responsive heading scaling */
-      h1 {
-        font-size: 1.75rem; /* ~28px */
-      }
-
-      h2 {
-        font-size: 1.5rem; /* ~24px */
-      }
-
-      h3 {
-        font-size: 1.25rem; /* ~20px */
-      }
-
-      @media (max-width: 640px) {
-        h1 {
-          font-size: 1.5rem; /* ~24px */
-        }
-
-        h2 {
-          font-size: 1.25rem; /* ~20px */
-        }
-
-        h3 {
-          font-size: 1.1rem; /* ~18px */
-        }
-      }
+      /* Reduce heading sizes by ~3px */
+      h1 { font-size: 1.75rem !important; } /* Tailwind default: 2.25rem */
+      h2 { font-size: 1.5rem !important; }  /* Tailwind default: 1.875rem */
+      h3 { font-size: 1.25rem !important; } /* Tailwind default: 1.5rem */
+      h4 { font-size: 1.125rem !important; } /* Tailwind default: 1.25rem */
+      h5 { font-size: 1rem !important; }
+      h6 { font-size: 0.875rem !important; }
 
       /* Animations */
       @keyframes slide-in-up {
