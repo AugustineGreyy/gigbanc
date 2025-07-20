@@ -28,11 +28,38 @@
     <!-- Custom Styles -->
     <style>
       html {
-        font-size: 14px; /* Reduced font size */
+        font-size: 14px;
       }
 
       body {
         font-family: 'Poppins', sans-serif;
+      }
+
+      /* Responsive heading scaling */
+      h1 {
+        font-size: 1.75rem; /* ~28px */
+      }
+
+      h2 {
+        font-size: 1.5rem; /* ~24px */
+      }
+
+      h3 {
+        font-size: 1.25rem; /* ~20px */
+      }
+
+      @media (max-width: 640px) {
+        h1 {
+          font-size: 1.5rem; /* ~24px */
+        }
+
+        h2 {
+          font-size: 1.25rem; /* ~20px */
+        }
+
+        h3 {
+          font-size: 1.1rem; /* ~18px */
+        }
       }
 
       /* Animations */
