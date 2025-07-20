@@ -5,61 +5,70 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>gigbanc.shop - Fast & Reliable Data</title>
+
+    <!-- Tailwind and Paystack -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://js.paystack.co/v1/inline.js"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Import Map for React (Vite) -->
+    <script type="importmap">
+      {
+        "imports": {
+          "react/": "https://esm.sh/react@^19.1.0/",
+          "react": "https://esm.sh/react@^19.1.0",
+          "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+          "react-router-dom": "https://esm.sh/react-router-dom@^7.7.0"
+        }
+      }
+    </script>
+
+    <!-- Custom Styles -->
     <style>
-  html {
-    font-size: 14px; /* Reduce from default 16px */
-  }
+      html {
+        font-size: 14px; /* Reduced font size */
+      }
 
-  body {
-    font-family: 'Poppins', sans-serif;
-  }
-
-  /* Your other animations... */
-</style>
       body {
         font-family: 'Poppins', sans-serif;
       }
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
       /* Animations */
       @keyframes slide-in-up {
         from { opacity: 0; transform: translateY(24px); }
         to { opacity: 1; transform: translateY(0); }
       }
+
       @keyframes fade-in {
         from { opacity: 0; }
         to { opacity: 1; }
       }
+
       @keyframes fade-in-down {
         from { opacity: 0; transform: translateY(-16px); }
         to { opacity: 1; transform: translateY(0); }
       }
+
       @keyframes new-row-highlight {
-        from { background-color: #eef2ff; } /* bg-indigo-50 */
+        from { background-color: #eef2ff; }
         to { background-color: transparent; }
       }
+
       @keyframes blob {
         0% { transform: translate(0px, 0px) scale(1); }
         33% { transform: translate(30px, -50px) scale(1.1); }
         66% { transform: translate(-20px, 20px) scale(0.9); }
         100% { transform: translate(0px, 0px) scale(1); }
       }
+
       @keyframes slide-in-out-left {
-        0% {
-          transform: translateX(-120%);
-          opacity: 0;
-        }
-        15%, 85% {
-          transform: translateX(0);
-          opacity: 1;
-        }
-        100% {
-          transform: translateX(-120%);
-          opacity: 0;
-        }
+        0% { transform: translateX(-120%); opacity: 0; }
+        15%, 85% { transform: translateX(0); opacity: 1; }
+        100% { transform: translateX(-120%); opacity: 0; }
       }
+
       @keyframes float {
         0% { transform: translateY(0px); }
         50% { transform: translateY(-10px); }
@@ -69,43 +78,43 @@
       .animate-fade-in {
         animation: fade-in 0.6s ease-out forwards;
       }
+
       .animate-fade-in-down {
         animation: fade-in-down 0.4s ease-out forwards;
       }
+
       .animate-slide-in-up {
         animation: slide-in-up 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
       }
+
       .animate-new-row {
         animation: new-row-highlight 2s ease-out forwards;
       }
+
       .animate-blob {
         animation: blob 7s infinite;
       }
+
       .animate-slide-in-out {
         animation: slide-in-out-left 4.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
       }
+
       .animate-float {
         animation: float 6s ease-in-out infinite;
       }
+
       .animation-delay-2000 {
         animation-delay: 2s;
       }
+
       .animation-delay-4000 {
         animation-delay: 4s;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.1.0/",
-    "react": "https://esm.sh/react@^19.1.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.7.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+
+    <!-- Your main stylesheet -->
+    <link rel="stylesheet" href="/index.css" />
+  </head>
   <body class="bg-gray-50 text-gray-800 bg-gradient-to-br from-white via-gray-50 to-indigo-50/20">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
