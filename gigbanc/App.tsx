@@ -8,6 +8,7 @@ import PurchasePage from './pages/PurchasePage';
 import TermsPage from './pages/TermsPage';
 import PrivacyPage from './pages/PrivacyPage';
 import SupportPage from './pages/SupportPage';
+import WhatsAppButton from './components/WhatsAppButton';
 import { DataPlan, TransactionNotification } from './types';
 import PurchaseModal from './components/PurchaseModal';
 import TransactionNotificationPopup from './components/TransactionNotificationPopup';
