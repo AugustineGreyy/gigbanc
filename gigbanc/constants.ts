@@ -58,4 +58,4 @@ export const MOCK_TRANSACTIONS: Transaction[] = [
   { id: 'txn5', network: Network.GLO, planName: '10GB Data Plan', amount: 900, phone: '0811***7890', timestamp: new Date(Date.now() - 15 * 60 * 1000) },
 ];
 
-export const PAYSTACK_PUBLIC_KEY = 'pk_test_4b4167f6b8874024c31e332ecfc76c5505484e4f';
+export const PAYSTACK_PUBLIC_KEY = 'pk_live_f586e7093aa2551b5fbab94e564fc6de67952cba';
