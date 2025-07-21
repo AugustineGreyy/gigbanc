@@ -12,7 +12,6 @@ import { DataPlan, TransactionNotification } from './types';
 import PurchaseModal from './components/PurchaseModal';
 import TransactionNotificationPopup from './components/TransactionNotificationPopup';
 import ScrollToTop from './components/ScrollToTop';
-import WhatsAppButton from './components/WhatsAppButton';
 import SuccessModal from './components/SuccessModal';
 
 export const AppContext = React.createContext<{
