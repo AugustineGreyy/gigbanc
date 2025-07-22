@@ -5,7 +5,7 @@ import Icon from './Icon';
 const WhatsAppButton: React.FC = () => {
   return (
     <a
-      href="https://wa.me/2349014610508"
+      href="https://wa.me/2349115890848"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contact us on WhatsApp"
